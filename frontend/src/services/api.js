@@ -1,7 +1,7 @@
 // Isolated API layer. Nothing in here knows about React or the DOM —
 // components call `predictHeartDisease(payload)` and handle the result.
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
+const API_BASE_URL = 'https://heart-disease-prediction-api-k9yn.onrender.com'
 
 export class ApiError extends Error {
   constructor(message, { status, details } = {}) {
